@@ -1,0 +1,11 @@
+;
+p-5-2   Count the length: Used to count the number of characters in the string.
+p-5-3   Conversion: Used to convert the case of the given string (i.e upper to lower and vice versa).
+p-5-4   String concatenate: Used to combine two strings and store them into third string.
+p-5-5   String copy: Used to copy the content of one string into other.
+p-5-6   String compare: Used to compare two strings for equality.
+p-5-7   Substring: Used to find substring from the given string.
+p-5-8   Reverse Used to reverse the content of the given string.
+p-5-9   Append: Used to add new string at the end of the given string.
+p-5-10  Insertion: Used to insert a text (word) in the given string.
+p-5-11  Deletion: Used to delete a text (word) from the given string.
