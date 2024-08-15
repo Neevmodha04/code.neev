@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-void ins() { cout << "This is INS"; }
-void del() { cout << "This is DEL"; }
+void ins(int arr[]);
+void del(int arr[]);
 void dis(int arr[]);
 int count = -1;
 int main(void) {
@@ -15,10 +15,10 @@ int main(void) {
     cin >> ch;
     switch (ch) {
     case 1:
-      ins();
+      ins(arry);
       break;
     case 2:
-      del();
+      del(arry);
       break;
     case 3:
       dis(arry);
@@ -27,7 +27,7 @@ int main(void) {
       dis(arry);
       exit(0);
     default:
-      cout << "Error choice is not Found :";
+      cout << "Error choice is not Found \n";
     }
   };
 }
@@ -40,4 +40,27 @@ void dis(int arr[]) {
     cout << '\t' << arr[c2] << endl;
     c2--;
   }
+}
+
+void del(int arr[]) {
+  if (count == -1) {
+    cout << "The STACK is Underflow \n";
+    return;
+  }
+  cout << "The Del ele is : " << arr[count] << endl;
+  count = count - 1;
+  dis(arr);
+}
+
+void ins(int arr[]) {
+  int x;
+  if (count >= 3) {
+    cout << "The STACK is Overflow \n";
+    return;
+  }
+  cout << "Enter To add :";
+  cin >> x;
+  count++;
+  arr[count] = x;
+  dis(arr);
 }
